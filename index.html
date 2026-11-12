@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お知らせ</title>
+  <!-- Google Fonts (Noto Sans JP) の読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* ベースのリセットとフォント設定 */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* メインカードのデザイン */
+    .card {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 420px;
+      padding: 48px 32px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
+      text-align: center;
+      animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* アイコン部分 */
+    .icon-wrapper {
+      width: 56px;
+      height: 56px;
+      background-color: #f1f5f9;
+      color: #475569;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 24px;
+    }
+
+    .icon-wrapper svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    /* 見出しテキスト */
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: #0f172a;
+      margin-bottom: 12px;
+    }
+
+    /* サブテキスト */
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #64748b;
+    }
+
+    /* ふわっと浮き上がるアニメーション */
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+    <div class="icon-wrapper" aria-hidden="true">
+      <!-- シンプルなインフォメーションアイコン -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+      </svg>
+    </div>
+    <h1>残念でした！</h1>
+    <p>本物のQRコードはポスターまで</p>
+  </main>
+
+</body>
+</html>
